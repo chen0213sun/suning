@@ -69,9 +69,10 @@ $(function() {
   });
   rbtn.click(function(event) {
     clearInterval(timer);
-    if (index == pics.length) {
-      index = 0;
+    if (index == pics.length-1) {
+      index = -1;
     }
+    index++;
     pics.css('display', 'none');
     pics.eq(index).css('display', 'block');
     slii.removeClass('yellow');
@@ -81,7 +82,6 @@ $(function() {
     slii.parents('li').find('.bg').removeClass('current');
     slii.eq(index).parents('li').find('.bg').addClass('current');
     bbg.css('background', arr[index]);
-    index++;
   });
   $('.banner-pic').mouseenter(function() {
     clearInterval(timer);

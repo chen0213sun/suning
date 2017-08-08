@@ -49,27 +49,25 @@ dd:hover {
 
 
 /*头部广告开始*/
-
 #layout_adt {
-  background: #008CC7;
-  width: 100%;
-  height: auto;
+	background: #008CC7;
+	width: 100%;
+	height: auto;
 }
-
+#top_adt_big{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	display: block;
+}
 #top_adt {
-  width: 1190px;
-  margin: 0 auto;
-  height: 0;
-  overflow: hidden;
-  position: relative;
+	width: 1190px;
+	margin: 0 auto;
+	display: block;
+	height: 0;
+	overflow: hidden;
+	position: relative;
 }
-
-#top_adt_big {
-  width: 100%;
-  overflow: hidden;
-  height: 695px;
-}
-
 #top_adt .x {
   background: url(../img/s_pic.png) no-repeat 0 0;
   width: 15px;
