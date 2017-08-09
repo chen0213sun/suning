@@ -143,7 +143,7 @@ $(document).ready(function(){
 	var index=0;
 	var len=$(".hots-and-share-wai .J-domLazy").length;
 	$(".floor-zone-main .switch-prev").click(function(){
-		if(index==len){index=0};
+		if(index==len-1){index=-1};
 		index++;
 		$(".hots-and-share-wai .J-domLazy").eq(index).fadeIn().siblings().hide();
 	});
